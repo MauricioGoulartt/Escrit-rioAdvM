@@ -1,0 +1,798 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: 400;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: 'Poppins', Arial, sans-serif;
+    src: url('/src/fonts/Poppins-Light.ttf') format('truetype');
+}
+
+.serv-section {
+    padding: 7em 0;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    position: relative;
+    overflow-x: hidden;
+}
+
+
+/* NAV */
+
+.logo1 {
+    border-style: none;
+    height: 110px;
+    padding-left: 10%;
+}
+
+#back-img {
+    background-image: url(/img/bg_1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.align-head {
+    width: 100%;
+    display: flex;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0),#ffffff81);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+}
+
+#nav {
+    display: flex;
+    align-items: center;
+    transition: 0.6s;
+    height: 100px;
+    padding-right: 10%;
+}
+
+.nav-link {
+   font-weight: 400; 
+}
+
+/*Sticky Menu*/
+
+#header.sticky {
+    width: 100%;
+    height: 100px;
+    background: white;
+    position: fixed;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+    z-index: 1000;
+    justify-content: space-around;
+}
+
+#header.sticky ul li a {        
+    color: #082646;
+    text-decoration: none;
+    display: block;
+}
+
+#header.sticky ul li a:hover {
+    transition: .6s;
+    color: rgb(148, 148, 148);
+}
+
+
+
+/*--*/
+
+#menu {
+    display: flex;
+    list-style: none; 
+}
+
+#menu a {
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 24px 20px;
+}
+
+#menu a:hover {
+    transition: .6s;
+    color: rgb(0, 0, 105);
+}
+
+#btn-mobile {
+    color: rgba(0, 0, 0, 0.664);
+    display: none;
+    align-items: center;
+    letter-spacing: 1.5px;
+    width: 10px;
+}
+
+/*Main*/
+
+#center-text {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    max-width: 1110px;
+    padding: 0 10%;
+}
+
+.caps {
+    text-align: justify;
+    width: 100%;
+    color: #fff;
+    margin: 0px 0px 16px;
+    line-height: 1.5;
+}
+
+.span-text {
+    color: rgba(255, 255, 255, 0.795);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.h1-text {
+    font-size: 50px;
+    font-weight: bold;
+    color: #fff;
+    margin: 0px 0px 24px;
+}
+
+.strong {
+    text-decoration: underline;
+}
+
+#btn-center {
+    max-width: 250px;
+    text-transform: uppercase;
+    font-size: 16px;
+    border: none;
+    color: #082646;
+    cursor: pointer;
+    padding: 1rem 1.5rem;
+    border-radius: 5px;
+    background: linear-gradient(to right, rgb(255, 255, 255),#ffffffd0);
+}
+
+#btn-center:hover {
+    background: #082646;
+    color: white;
+}
+
+#btn-center:active {
+    background: rgba(0, 0, 0, 0.863);
+    color: rgb(255, 255, 255);
+}
+
+/*Nossos Serviços*/
+
+.t-a-div {
+    display: flex;
+    justify-content: center;
+}
+
+.text-all {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 24px;
+    margin: 0 15px;
+}
+
+.subheading {
+    font-size: 13px;
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #082646;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.text-h2 {
+    text-align: center;
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 1.5rem;
+    color: rgba(0, 0, 0, 0.822);
+}
+
+.text-p {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-weight: 450;
+    color: rgba(0, 0, 0, 0.404);
+    line-height: 1.8;
+}
+
+.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    justify-content: center;
+}
+
+.col {
+    height: 272px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 180px;
+    position: relative;
+    padding: 0 15px;
+} 
+
+.text-center {
+    font-size: 24px;
+    text-align: center;
+    line-height: 1.5;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.text-h4 {
+    text-decoration: none;
+    font-weight: normal;
+    display: block;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-size: 24px;
+    margin: 0px 0px 8px;
+    color: black;
+}
+
+/*Nossos Serviços*/
+
+
+.d-flex {
+    -webkit-box-align: center !important;
+    -ms-flex-align: center !important;
+    align-items: center !important;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+}
+
+.row-2 {
+    display: flex;
+}
+
+.row-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.serv-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 48px 0px 15px;
+}
+
+.text-h2-2 {
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 1.5rem;
+    color: rgba(0, 0, 0, 0.822);
+    text-align: left;
+}
+
+.col-md-6 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    position: relative;
+    width: 100%;
+    min-width: 520px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.col-md {
+    width: 220px;
+    margin: 10px;
+}
+
+
+.services {
+    height: 400px;
+    margin-bottom: 10px;
+    padding: 30px;
+    width: 80%;
+    -webkit-box-shadow: 0px 2px 25px -16px rgb(0 0 0 / 26%);
+    -moz-box-shadow: 0px 2px 25px -16px rgba(0, 0, 0, 0.26);
+    box-shadow: 0px 2px 25px -16px rgb(0 0 0 / 26%);
+}
+
+.services .media-body {
+    position: relative;
+}
+
+.media-body {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+.icon-flex {
+    line-height: 1.3;
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #0826462d;
+    margin-bottom: 5px;
+}
+
+.heading {
+    font-size: 18px;
+    margin: 0px 0px 16px;
+    line-height: 1.5;
+    color: #000000CC;
+    font-weight: 400;
+    font-family: "Poppins", Arial, sans-serif;
+}
+
+.text-p2 {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-weight: 450;
+    color: rgba(0, 0, 0, 0.404);
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.btn-primary {
+    text-transform: uppercase;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 8px 20px;
+    border-radius: 5px;
+    background: #082646;
+}
+
+.btn-primary:hover {
+    background: #08264693;
+}
+
+.btn-primary:active {
+    border: 4px solid rgba(19, 113, 255, 0.514);
+}
+
+/* Avaliações */
+
+
+
+/* O advogado */
+
+.row-adv {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0 15px;
+    align-items: center;
+}
+
+.adv-img {
+    padding: 0 15px;
+}
+
+.img-align {
+    background-image: url(/img/teacher-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 350px;
+    height: 420px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.text-img {
+    background: linear-gradient(to left, rgba(255,255,255,0.1),rgba(255, 255, 255, 0.596));
+    border-top: 1px solid rgba(255,255,255,0.3);
+    border-left: 1px solid rgba(255,255,255,0.3);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.p-card {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-style: oblique;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.774);
+}
+
+.ftc-social {
+    display: flex;
+}
+
+.ftc-social li {
+    letter-spacing: 20px;
+    text-decoration: none;
+    list-style: none;
+}
+
+.ftc-social span {
+    color: rgba(0, 0, 90, 0.829);
+}
+
+.sobre-adv {
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15px;
+}
+
+.detail-sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    padding: 0 0 0 48px;
+}
+
+.detail-sobre h2 {
+    color: #000000CC;
+    font-size: 32px;
+    margin: 0px 0px 24px;
+}
+
+.detail-sobre p {
+    color: #999999;
+    margin: 0px 0px 16px;
+}
+
+.btn-adv {
+    display: flex;
+    width: 330px;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-primary-adv {
+    text-transform: uppercase;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 4px 12px;
+    border-radius: 5px;
+    background: #082646;
+    text-align: center;
+    width: 100%;
+}
+
+@media (max-width: 1100px) {
+
+    .align-head {
+        background-color: #fff;
+        position: relative;
+        height: 100px;
+    }
+
+    #menu {
+        color: black;
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 95px;
+        right: 0px;
+        background: white;
+        backdrop-filter: blur(15px);
+        height: 0;
+        transition: .6s;
+        z-index: 1000;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    #nav {
+        width: 100px;
+    }
+
+    #nav.active #menu {
+        color: black;
+        height: 350px;
+        display: block;
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    #menu a {
+        color: rgb(0, 0, 0);
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid rgbs(0,0,0, .05);
+    }
+
+    #menu a:hover {
+        color: #727272b0;
+    }
+
+    #btn-mobile {
+        display: flex;
+        border: none;
+        background: none;
+        font-size: 1rem;
+        cursor: pointer;
+        gap: .5rem;
+        width: 100px;
+    }
+
+    #hamburguer {
+        color: rgba(0, 0, 0, 0.692);
+        width: 20px;
+        border-top: 2px solid;
+    }
+
+    #hamburguer::after, #hamburguer::before {
+        width: 20px;
+        height: 2px;
+        background-color: currentColor;
+        content: '';
+        display: block;
+        margin-top: 5px;
+        transition: .3s;
+        position: relative;
+    }
+
+    #nav.active #hamburguer {
+        border-top-color: transparent;
+    }
+
+    #nav.active #hamburguer::before {
+        transform: rotate(135deg);
+    }
+
+    #nav.active #hamburguer::after {
+        top: -7px;
+        transform: rotate(-135deg);
+    }
+
+    /*Main*/
+
+    #center-text {
+        padding: 0 10vw;
+    }
+
+    .container {
+        margin: 0;
+    }
+
+    .h1-text {
+        font-size: 40px;
+        line-height: 1.2;
+    }
+
+    /*Nossos serviços*/
+
+    .col-md-6 {
+        padding: 0;
+    }
+
+    .row-flex {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        min-width: none;
+    }
+
+    .services {
+        height: 100%;
+    }
+
+    .row-2 {
+        display: block;
+        width: 100%;
+    }
+
+    .serv-left {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 48px;
+    }
+    
+
+    .col {
+    height: 272px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    } 
+
+    .col-md-6 {
+        min-width: none;
+    }
+
+    .col-md {
+        width: 100%;
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    .services {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .text-h4 {
+        padding: 15px;
+    }
+
+    .text-h2-2 {
+        font-size: 28px;
+        text-align: left;
+    }
+
+    /*O advogado*/
+
+    .contaier-2 {
+        padding: 0 15px;
+    }
+
+    .img-align {
+        width: 400px;
+    }
+
+    .row-adv {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .detail-sobre {
+        padding: 0 50px;
+        width: 100%;
+    }
+
+    .sobre-adv {
+        width: 100%;
+    }
+
+  
+}
+    
+@media (max-width: 700px) {
+
+    .serv-section {
+        padding: 3rem 0;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .logo1 {
+        padding: 0 15px;
+    }
+
+    #nav {
+        padding: 0;
+    }
+
+
+    /*Main*/
+
+    #center-text {
+        padding: 0 15px;
+    }
+
+    .span-text {
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 14px;
+    }
+
+    .h1-text {
+        font-size: 30px;
+        margin: 0 0 24px;
+    }
+
+    .subheading {
+        text-align: left;
+    }
+
+    /*Nossos serviços*/
+
+    .text-all {
+        padding: 0;
+        margin: 0;
+    }
+
+    .text-h2 {
+        font-size: 28px;
+        text-align:center;
+    }
+
+    .text-h2-2 {
+        font-size: 28px;
+        text-align: left;
+    }
+
+    .text-p {
+        text-align: justify;
+    }
+
+
+    .col {
+        height: 272px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        position: relative;
+        padding: 0 15px;
+    }  
+    
+    .serv-left {
+        padding: 0;
+    }
+
+    .p-left {
+        text-align: justify;
+    }
+
+    .col-md {
+        width: 100%;
+    }
+
+    .col-md-6 {
+        min-width: 1px;
+    }
+
+    /*O advogado*/
+
+    .detail-sobre {
+        padding: 0 15px;
+    }
+}
+
+
+
+
+
+

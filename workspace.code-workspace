@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "..\\..\\landing-pages\\phpmailer"
+		},
+		{
+			"path": "..\\..\\landing-pages\\admin"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "EscritórioAdvM",
+		"liveServer.settings.port": 5501
+	}
+}
