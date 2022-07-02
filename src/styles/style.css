@@ -116,6 +116,11 @@ body {
 
 /*Main*/
 
+.container {
+    margin: 0;
+    padding: 0px 0px 15px 0px;
+}
+
 #center-text {
     height: 100vh;
     display: flex;
@@ -258,17 +263,18 @@ body {
 
 /*Nosso Trabalho*/
 
-.contain {
-    height: 100%;
+#work-section {
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .d-flex {
-    -webkit-box-align: center !important;
-    -ms-flex-align: center !important;
-    align-items: center !important;
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
-    display: flex !important;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
 }
 
 .row-2 {
@@ -286,6 +292,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 0px 48px 0px 15px;
+    margin-left: 10%;
 }
 
 .text-h2-2 {
@@ -298,28 +305,22 @@ body {
 }
 
 .col-md-6 {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 50%;
-    flex: 0 0 50%;
-    position: relative;
     width: 100%;
-    min-width: 520px;
 }
 
 .col-md {
-    width: 240px;
     margin: 10px;
 }
 
 .services {
+    padding: 20px;
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
     margin-bottom: 10px;
-    padding: 15px;
     -webkit-box-shadow: 0px 2px 25px -16px rgb(0 0 0 / 26%);
     -moz-box-shadow: 0px 2px 25px -16px rgba(0, 0, 0, 0.26);
-    box-shadow: 0px 2px 25px -16px rgb(0 0 0 / 26%);
+    box-shadow: 0px 2px 25px -16px rgba(0, 0, 0, 0.63);
+    max-width: 15vw;
 }
 
 .media-body {
@@ -351,12 +352,6 @@ body {
 }
 
 .text-p2 {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    margin-top: 0;
     margin-bottom: 1rem;
     font-weight: 450;
     color: rgba(0, 0, 0, 0.404);
@@ -365,6 +360,7 @@ body {
 }
 
 .btn-primary {
+    box-sizing: border-box;
     text-transform: uppercase;
     font-size: 14px;
     color: white;
@@ -626,12 +622,13 @@ body {
 
 
 .item {
+    margin: 0 15px;
     display: flex;
     flex-direction: column;
-    border-radius: 5px;
+    border-radius: 15px;
     background-color: #fff;
     padding: 24px 20px;
-    box-shadow: 2px 3px 10px #00000013;
+    box-shadow: 2px 3px 10px #00000033;
     cursor: pointer;
     justify-content: space-between;
 }
@@ -657,8 +654,11 @@ body {
 
 .flex-align {
     display: flex;
-    justify-content: start;
+    justify-content: space-around;
     align-items: center;
+    background: linear-gradient(to right, rgb(255, 255, 255),#fc992759);
+    border-radius: 15px;
+    padding: 0 20px;
 }
 
 .mb-4 {
@@ -680,10 +680,77 @@ body {
     font-weight: 500;
 }
 
+.owl-theme .owl-dots .owl-dot span {
+    background-color: #082646;
+}
+
+/*Blog*/
+
+.container-blog {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#sb-s {
+    text-align: center;
+}
+
+.fa-calendar:before {
+    content: "\f073";
+}
+
+.block-20 {
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    height: 250px;
+    width: 100%;
+    position: relative;
+    display: block;
+}
+
+.row-blog {
+    display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+}
+
+.row-blog::after::before {
+    box-sizing: border-box;
+}
+
+.col-animate {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 30%;
+    flex: 0 0 30%;
+    width: 100%;
+}
+
+.blog-entry {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+    margin-bottom: 40px;
+}
+
+.heading a {
+    line-height: 1.5;
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+    text-decoration: none;
+    font-size: 22px;
+}
 
 
 
-@media (max-width: 1100px) {
+@media (max-width: 1200px) {
 
 
     .serv-section {
@@ -785,6 +852,7 @@ body {
 
     .container {
         margin: 0;
+        padding: 0px 0px 15px 0px;
     }
 
     .h1-text {
@@ -799,25 +867,21 @@ body {
 
     /*Nosso Trabalho*/
 
-    .col-md-6 {
-        padding: 0;
-    }
-
-    .row-flex {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: center;
-        min-width: none;
-    }
-
-    .services {
-        height: 100%;
-    }
-
     .row-2 {
-        display: block;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .col-md {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 100%;
+        margin: 10px;
     }
 
     .serv-left {
@@ -826,34 +890,17 @@ body {
         justify-content: center;
         align-items: center;
         padding: 0px 48px;
-    }
-    
-    .col {
-        height: 272px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        position: relative;
-    } 
-
-    .col-md-6 {
-        min-width: none;
-    }
-
-    .col-md {
-        width: 100%;
         margin: 0;
-        align-items: center;
+    }
+
+    .row-flex {
+        flex-direction: column;
         justify-content: center;
-        display: flex;
+        align-items: center;
     }
 
     .services {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+        max-width: 50%;
     }
 
     .text-h4 {
@@ -863,10 +910,6 @@ body {
     .text-h2-2 {
         font-size: 28px;
         text-align: center;
-    }
-
-    .btn-primary {
-        width: 50%;
     }
 
     /*O advogado*/
@@ -894,7 +937,17 @@ body {
         width: 100%;
     }
 
-    /*Avaliaçõe*/
+    /*bLOG*/
+
+    .row-blog {
+        flex-wrap: wrap;
+    }
+
+    .col-animate {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0100%;
+        flex: 0 0 100%;
+    }
   
 }
     
@@ -911,7 +964,7 @@ body {
     }
 
     #nav {
-        padding: 0;
+        padding-right: 0;
     }
 
 
@@ -936,54 +989,6 @@ body {
         display: block;
     }
 
-    /*Nosso trabalho*/
-
-    .text-all {
-        padding: 0;
-        margin: 0;
-    }
-
-    .text-h2 {
-        font-size: 28px;
-        text-align:center;
-    }
-
-    .text-h2-2 {
-        font-size: 28px;
-        text-align: center;
-    }
-
-    .text-p {
-        text-align: justify;
-    }
-
-
-    .col {
-        height: 272px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        position: relative;
-        padding: 0 15px;
-    }  
-    
-    .serv-left {
-        padding: 0;
-    }
-
-    .p-left {
-        text-align: justify;
-    }
-
-    .col-md {
-        width: 100%;
-    }
-
-    .col-md-6 {
-        min-width: 1px;
-    }
-
     /*O advogado*/
 
     .detail-sobre {
@@ -1004,6 +1009,33 @@ body {
         padding: 0;
         height: 100%;
         width: 100%;
+    }
+
+    /*Nosso trabalho*/
+
+    .row-2 {
+        padding: 0 15px;
+    }
+
+    .serv-left {
+        padding: 0 15px;
+    }
+
+    .services {
+        align-items: center;
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .heading {
+        text-align: center;
+        justify-content: center;
+    }
+
+    /*Avaliações*/
+
+    .flex-align {
+        justify-content: space-between;
     }
 }
 
