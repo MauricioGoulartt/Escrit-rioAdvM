@@ -505,6 +505,8 @@ body {
 
 /* Quem Somos */
 
+
+
 .row-about {
     display: flex;
     width: 100%;
@@ -549,7 +551,6 @@ body {
 }
 
 .col-about {
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -741,12 +742,17 @@ body {
 }
 
 .blog-entry {
+    border-radius: 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 15px;
+    padding: 15px;
     margin-bottom: 40px;
+    -webkit-box-shadow: 0px 2px 25px -16px rgb(0 0 0 / 26%);
+    -moz-box-shadow: 0px 2px 25px -16px rgba(0, 0, 0, 0.26);
+    box-shadow: 0px 2px 25px -16px rgb(0 0 0 / 63%);
+
 }
 
 .text-block {
@@ -1010,9 +1016,29 @@ center {
     transition: 0.2s ease-in;
 }
 
+@keyframes pulse {
+
+    0% {
+        -moz-box-shadow: 0 0 0 0 rgba(73, 134, 252, 0.4);
+        -webkit-box-shadow: 0 0 0 0 rgb(73 134 252 / 40%);
+        box-shadow: 0 0 0 0 rgb(73 134 252 / 40%);
+    }
+    70% {
+        -moz-box-shadow: 0 0 0 30px rgba(73, 134, 252, 0);
+        -webkit-box-shadow: 0 0 0 30px rgb(73 134 252 / 0%);
+        box-shadow: 0 0 0 30px rgb(73 134 252 / 0%);
+    }
+    100% {
+        -moz-box-shadow: 0 0 0 0 rgba(73, 134, 252, 0);
+        -webkit-box-shadow: 0 0 0 0 rgb(73 134 252 / 0%);
+        box-shadow: 0 0 0 0 rgb(73 134 252 / 0%);
+    }
+    
+}
+
 .piscar2 {
     box-shadow: 0 0 0 0 rgba(#fff, .5);
-    -webkit-animation: pulse 1.5s infinite;
+    -webkit-animation: pulse 1.5s infinite;animation: pulse 1.5s infinite;
 }
 
 /* Footer */
