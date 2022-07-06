@@ -945,6 +945,11 @@ body {
     color: rgba(255, 255, 255, 0.8);
 }
 
+.row-esp {
+    display: flex;
+    justify-content: center;
+}
+
 .col-esp {
     text-align: center;
     -webkit-box-sizing: border-box;
@@ -1193,8 +1198,11 @@ footer {
     }
 
     .container {
-        margin: 0;
-        padding: 0px 0px 15px 0px;
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
     }
 
     .h1-text {
