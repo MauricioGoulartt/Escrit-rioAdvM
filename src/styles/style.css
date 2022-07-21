@@ -64,7 +64,7 @@ body {
 #menu a {
     cursor: pointer;
     font-size: 15px;
-    color: black;
+    color: #082646;
     text-decoration: none;
     display: block;
     padding: 24px 20px;
@@ -99,7 +99,7 @@ body {
 }
 
 #header.sticky ul li a {        
-    color: #000000;
+    color: #082646;
     text-decoration: none;
     display: block;
     transition: 0.6s;
@@ -150,7 +150,8 @@ body {
 }
 
 .caps {
-    text-align: justify;
+    font-size: 18px;
+    text-align: center;
     width: 100%;
     color: #fff;
     margin: 0px 0px 32px;
@@ -356,10 +357,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100vw;
 }
 
 .services {
-    width: 80%;
+    width: 50%;
     padding: 20px;
     display: flex;
     justify-content: center;
@@ -369,7 +371,6 @@ body {
     -webkit-box-shadow: 0px 2px 25px -16px rgb(0 0 0 / 26%);
     -moz-box-shadow: 0px 2px 25px -16px rgba(0, 0, 0, 0.26);
     box-shadow: 0px 2px 25px -16px rgba(0, 0, 0, 0.63);
-
 }
 
 .media-body {
@@ -415,6 +416,14 @@ body {
 }
 
 .text-p2 {
+    margin-bottom: 1rem;
+    font-weight: 450;
+    color: rgba(0, 0, 0, 0.404);
+    line-height: 1.8;
+    text-align: center;
+}
+
+.text-p2q {
     margin-bottom: 1rem;
     font-weight: 450;
     color: rgba(0, 0, 0, 0.404);
@@ -494,7 +503,6 @@ body {
 .p-card {
     font-size: 20px;
     margin-bottom: 10px;
-    font-style: oblique;
     font-weight: 600;
     color: rgba(0, 0, 0, 0.774);
 }
@@ -1208,7 +1216,7 @@ footer {
 
     #menu a {
         font-weight:500;
-        color: #000000;
+        color: #082646;
         padding: 1rem 0;
         margin: 0 1rem;
         border-bottom: 2px solid rgbs(0,0,0, .05);    
@@ -1271,6 +1279,11 @@ footer {
         margin-left: auto;
     }
 
+    .caps {
+        text-align: justify;
+        font-size: 16px;
+    }
+
     .h1-text {
         font-size: 40px;
         line-height: 1.2;
@@ -1307,12 +1320,6 @@ footer {
         align-items: center;
         padding: 0px 48px;
         margin: 0;
-    }
-
-    .row-flex {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
     }
 
     .text-h4 {
@@ -1483,6 +1490,7 @@ footer {
     .services {
         align-items: center;
         padding: 15px;
+        width: 100%;
     }
 
     .heading {
